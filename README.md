@@ -1,6 +1,6 @@
 # TEMA 1 ISC -> ANCA-MARIA COLACEL
 
-*Tema contine 3 taskuri. Le voi detalia pe fiecare in parte.*
+**Tema contine 3 taskuri. Le voi detalia pe fiecare in parte.**
 
 ## TASK1 - CRYPTO-ATTACK
 In vederea rezolvarii acestui exercitiu a fost necesara completarea scriptului pus la dispozitie in arhiva.
@@ -10,6 +10,7 @@ Am incercat sa decodez message.txt din b64 si am obtinut un json cu 3 campuri, n
 
 ## TASK2 - LINUX ACL
  1) In primul rand ma conectez la userul janitor cu ssh.
+    
     ``ssh -i id_rsa janitor@isc2023.1337.cx``
     
  
