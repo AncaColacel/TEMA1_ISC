@@ -12,6 +12,24 @@ Am incercat sa decodez message.txt din b64 si am obtinut un json cu 3 campuri, n
  1) In primul rand ma conectez la userul janitor cu ssh.
     
     ```ssh -i id_rsa janitor@isc2023.1337.cx```
+
+2) Dau urmatoarea comanda si gasesc fisierul hints.txt la calea /var/.hints.txt.
+
+   ```find /var -type f -exec grep -l 'hints' {} +```
+   
+   Dau cat pe fisier si obtin:
+
+   ```Here's more hints:
+
+  - No ideas? Try to ltrace the setuid binaries!
+  - Try to find the hidden config directory ;) 
+  - How does that custom sudo binary match the allowed command? How about its
+    arguments?
+  - You can add scripts to the same dir as sudo-permitted ones, but you cannot
+    delete/modify them due to sticky bit :P```
+
+   
+   
     
  
  , 
