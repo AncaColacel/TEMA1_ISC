@@ -30,7 +30,7 @@ Am incercat sa decodez message.txt din b64 si am obtinut un json cu 3 campuri, n
 
    ```
 
-   Dupa ce ma uit prin fisiere observ ca de interes este fisierul robo-sudo acesta avand userul zboss
+  3) Dupa ce ma uit prin fisiere observ ca de interes este fisierul robo-sudo acesta avand userul zboss
 
    ```
    janitor@fhunt:/usr/local/bin$ ls -la         
@@ -43,6 +43,24 @@ Am incercat sa decodez message.txt din b64 si am obtinut un json cu 3 campuri, n
    -rwxr-xr-x  1 root     root      163 Apr 10  2022 vacuum-control
 
    ```
+
+Dau strings pe robot-sudo si gasesc 
+```
+
+Please supply a command as argument!
+Unable to determine current user! Exiting...
+Hey, no shell injection please!
+Invalid command given!
+/.you.are.never/.gonnafindthis/r0b0t3rs.conf
+
+```
+deci am gasit fisierul cu permisiuni si din acesta gasesc regulile: 
+
+```
+allow wallybot /opt/.wellhidden/0b3y.b0ss
+allow janitor /usr/local/bin/vacuum-control
+
+```
 
    
    
