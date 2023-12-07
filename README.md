@@ -28,6 +28,18 @@ Am incercat sa decodez message.txt din b64 si am obtinut un json cu 3 campuri, n
    - You can add scripts to the same dir as sudo-permitted ones, but you cannot
     delete/modify them due to sticky bit :P
 
+   Dupa ce ma uit prin fisiere observ ca de interes este fisierul robo-sudo acesta avand userul zboss
+
+   ```
+   janitor@fhunt:/usr/local/bin$ ls -la         
+   total 48
+   drwxrwxr-t+ 1 root     root     4096 Dec  7 16:01 .
+   drwxr-xr-x  1 root     root     4096 Oct  3 02:03 ..
+   -rwxr-xr-x  1 janitor  janitor    74 Apr 10  2022 janitor-coffee.sh
+   -rwxr-xr-x  1 janitor  janitor   228 Apr 10  2022 janitor-vacuum.sh
+   -rwsr-xr-x  1 wallybot zboss   17408 Dec  7 16:01 robot-sudo
+   -rwxr-xr-x  1 root     root      163 Apr 10  2022 vacuum-control
+
    
    
     
