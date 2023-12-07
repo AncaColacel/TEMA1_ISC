@@ -11,7 +11,7 @@ Am incercat sa decodez message.txt din b64 si am obtinut un json cu 3 campuri, n
 ## TASK2 - LINUX ACL
  1) In primul rand ma conectez la userul janitor cu ssh.
     
-    ``ssh -i id_rsa janitor@isc2023.1337.cx``
+    ```ssh -i id_rsa janitor@isc2023.1337.cx```
     
  
  , 
