@@ -78,6 +78,8 @@ si am primit asta.
 
 4) Folosesc /usr/local/bin/vacuum-control in /usr/local/bin/vacuum-control-v1 si fac urmatoarea modifacare ca sa pot gasi flagul
 
+```
+
 `janitor@fhunt:/usr/local/bin$ cat vacuum-control-v1 
 #!/bin/bash
 
@@ -89,12 +91,11 @@ fi
 /opt/.wellhidden/0b3y.b0ss ad002825749349601baafd654b5406e2
 cat /etc/opt/something/here.bin/.xyzflag
 
-# the rest of its implementation omitted / not important
+the rest of its implementation omitted / not important
 
 janitor@fhunt:/usr/local/bin$ robot-sudo /usr/local/bin/vacuum-control-v1 /opt/.wellhidden/0b3y.b0ss ad002825749349601baafd654b5406e2
 Congratulations, here's your flag:
 SpeishFlag{RpBElwNQrhVrrYLolrkLrTOXtOQgZJWL}``
-
 
 ```
 
