@@ -26,7 +26,7 @@ Am incercat sa decodez message.txt din b64 si am obtinut un json cu 3 campuri, n
    - How does that custom sudo binary match the allowed command? How about its
     arguments?
    - You can add scripts to the same dir as sudo-permitted ones, but you cannot
-    delete/modify them due to sticky bit :P```
+    delete/modify them due to sticky bit :P
 
    
    
