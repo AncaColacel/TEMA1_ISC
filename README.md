@@ -30,7 +30,7 @@ Am incercat sa decodez message.txt din b64 si am obtinut un json cu 3 campuri, n
 
    ```
 
-  3) Dupa ce ma uit prin fisiere observ ca de interes este fisierul robo-sudo acesta avand userul zboss
+  3) Dupa ce ma uit prin fisiere observ ca de interes este fisierul robo-sudo acesta avand userul wallybot
 
    ```
    janitor@fhunt:/usr/local/bin$ ls -la         
