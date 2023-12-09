@@ -31,17 +31,14 @@ def random_with_N_digits(n):
     return randint(range_start, range_end)
 
 if __name__ == "__main__":
-    # example public key
-    pub_k = {"e": 17, "n": 1221540932698357538969048008476734604937734436157953593060163}
-
-    s = "eyJuIjogMTA5MzU4Njk3NzM2MjMzNjU0ODQzNzM0MzgxNzQ0NTE0ODUxNjE3MjUzMDI4ODI3MTM1NzY2MjM0MjExNDIyNjY0OTI5ODY5MDYzNTc0MDk3OTE5NDQ2MzE4NTM4OTQyNDE5ODc3NDUwMzI3OTI1NTg4MzU2NTEwODc5MDUyOTI5NDI1NTg1NDM1NDM1MDA3MTUzOTMwOTEzMDYxMjY3ODA1MzQ3MzQ4MDYwMDQ0NjIzNDQxNzA0MTMyMjU1NTkxMDA4MTI2MjQ2ODIwMDgwNzQ5NTIxNDcwODA4NDA4NTcxNTEwNjMxMTY4ODQwMjk3MTExNjcxMjM1MDg4NTEwNDQ5ODU3NjQ1MDg2NDk5MjkzOTU0NjY5NjM5NjI3NDY3ODkxOTA3Mjk4OTY0MTMxMjgxNjU0MjIzODkxMjM3NDU3MDQ5MzQ5OTQzMzc2ODUyMzgzMDQ1MTQyNjk0OTE5NDUxNTc3Njg5Nzk5MDk4NTM4NzA5MTE2NzM2MjQwNTgyMTAzNjA5MzQxMDI4MDg3NTY4NjQ3MTYxNzYwODgzMTc1NTg2ODQ0OTAzMDY4NjU5ODE4MDIxNTgxOTkyMzI4MDc1NTY2NTgwMTgyMjk5MTMyNTUzNzgyNDY4OTYzMzA1MTI1MzI1MDA1OTk5OTA1NjgyNDYyNzUyMzQ0MDc4MjMxNTUxODAzNzU3MTgwNTY5MDI5ODExODE3MzkwOTI4MTA3MjY0MDgyOTM4NTQyMDMwMTc2MjYzMjY5NTE4MDM2MDYyMzY2ODQ1Mzc1NDQ1MjkwNTIyOTE2NDQ4NzQ3Njc4NjIwMTQyMzMsICJlIjogNDMzNzE5LCAiZmxhZyI6ICJBUUVGK20rZXU5R29CU0NRczlleXN1aDJwYkN5a2lGSXZmVEt2MVpNT0s5V0F2Ykg0RWNRdzFSZFp1dGErNGVSNHJ1eURyb0pLZEtmdlNrbXhsZExDaDJuMndjQnk5aE1vSVZZbnNZS2p6V0xYeUgybDhqejJzVzRFbGpycG4zM1d2UzlZS1R6TTQ4WWRvTmZ5UE95dTlMQ2ZuQU5uNXBMNUJqbHgvZTJBamRZN1p3RlUxNzVwdHUwV0g1UVEzdlY1c1M5V3ZOWDFRbXVKbVNPck9BWkgrUWpOSDUrak56Y1dPaWdwRGl1eVBvNjB1M0xTZzZRUHRrR0hyTUJVME5zSm92VUExZVk0S3gxQ3Z6NlljWWJ4Mmo2K2lmNVcza0xaUURpT1RVSVZiV1l5d3djclI5enF1NnEzb2ZiNVFkZGkrdkJTdWRaTWhYSDJ5QWFSWjk1SXJBTyJ9"
-    
+    # mesajul meu 
+    m = "eyJuIjogMTA5MzU4Njk3NzM2MjMzNjU0ODQzNzM0MzgxNzQ0NTE0ODUxNjE3MjUzMDI4ODI3MTM1NzY2MjM0MjExNDIyNjY0OTI5ODY5MDYzNTc0MDk3OTE5NDQ2MzE4NTM4OTQyNDE5ODc3NDUwMzI3OTI1NTg4MzU2NTEwODc5MDUyOTI5NDI1NTg1NDM1NDM1MDA3MTUzOTMwOTEzMDYxMjY3ODA1MzQ3MzQ4MDYwMDQ0NjIzNDQxNzA0MTMyMjU1NTkxMDA4MTI2MjQ2ODIwMDgwNzQ5NTIxNDcwODA4NDA4NTcxNTEwNjMxMTY4ODQwMjk3MTExNjcxMjM1MDg4NTEwNDQ5ODU3NjQ1MDg2NDk5MjkzOTU0NjY5NjM5NjI3NDY3ODkxOTA3Mjk4OTY0MTMxMjgxNjU0MjIzODkxMjM3NDU3MDQ5MzQ5OTQzMzc2ODUyMzgzMDQ1MTQyNjk0OTE5NDUxNTc3Njg5Nzk5MDk4NTM4NzA5MTE2NzM2MjQwNTgyMTAzNjA5MzQxMDI4MDg3NTY4NjQ3MTYxNzYwODgzMTc1NTg2ODQ0OTAzMDY4NjU5ODE4MDIxNTgxOTkyMzI4MDc1NTY2NTgwMTgyMjk5MTMyNTUzNzgyNDY4OTYzMzA1MTI1MzI1MDA1OTk5OTA1NjgyNDYyNzUyMzQ0MDc4MjMxNTUxODAzNzU3MTgwNTY5MDI5ODExODE3MzkwOTI4MTA3MjY0MDgyOTM4NTQyMDMwMTc2MjYzMjY5NTE4MDM2MDYyMzY2ODQ1Mzc1NDQ1MjkwNTIyOTE2NDQ4NzQ3Njc4NjIwMTQyMzMsICJlIjogNDMzNzE5LCAiZmxhZyI6ICJBUUVGK20rZXU5R29CU0NRczlleXN1aDJwYkN5a2lGSXZmVEt2MVpNT0s5V0F2Ykg0RWNRdzFSZFp1dGErNGVSNHJ1eURyb0pLZEtmdlNrbXhsZExDaDJuMndjQnk5aE1vSVZZbnNZS2p6V0xYeUgybDhqejJzVzRFbGpycG4zM1d2UzlZS1R6TTQ4WWRvTmZ5UE95dTlMQ2ZuQU5uNXBMNUJqbHgvZTJBamRZN1p3RlUxNzVwdHUwV0g1UVEzdlY1c1M5V3ZOWDFRbXVKbVNPck9BWkgrUWpOSDUrak56Y1dPaWdwRGl1eVBvNjB1M0xTZzZRUHRrR0hyTUJVME5zSm92VUExZVk0S3gxQ3Z6NlljWWJ4Mmo2K2lmNVcza0xaUURpT1RVSVZiV1l5d3djclI5enF1NnEzb2ZiNVFkZGkrdkJTdWRaTWhYSDJ5QWFSWjk1SXJBTyJ9"
     # nr random folosit pentru impartire
     r = 3
-    # a stocheaza mesajul decodat din base64
-    a = json.loads(base64.b64decode(s))
+    # d stocheaza mesajul decodat din base64
+    d = json.loads(base64.b64decode(m))
     # se creeaza cypher_dash ul utilizand formula specifica algoritmului
-    cypher_dash = (gmpy2.from_binary(base64.b64decode(a['flag'])) * (gmpy2.powmod(r ,a['e'], a['n']))) % a['n']
+    cypher_dash = (gmpy2.from_binary(base64.b64decode(d['flag'])) * (gmpy2.powmod(r ,d['e'], d['n']))) % d['n']
     
     # completez cu valorile decodate din base64
     msg = {
@@ -51,12 +48,12 @@ if __name__ == "__main__":
 
     # se trimite la server mesajul 
     send_this = base64.b64encode(json.dumps(msg).encode())
-    
-    d_uni = b'\xfaQ0<Z8\xd3E$6q\xcc\xca\x00`9)\x91\x05\xfa8\xd5\xa2\xab\xcf\x90\xd8\xa6A\xd2\xa3\x02\x96\xe4\xdch\xe5_\xa5\xed\x976<w'
+    # acesta este rezultatul serverului la mesajul meu trimis
+    d_unicode = b'\xfaQ0<Z8\xd3E$6q\xf7*\x0b\xe7\xa0\x00\x02\xa8\xdc\x0b\xde\xdch\x94<<Q-\x05\xc9\xdcA\xe1\xc3\xc4k\xfaZG\xee6\x06w'
     # se foloseste decode unicode 
-    d_dec = d_uni.decode("unicode_escape")
+    d_decode = d_unicode.decode("unicode_escape")
     # mesajul se converteste la numar
-    d = str_to_number(d_dec)
+    d = str_to_number(d_decode)
     # se imparte la r conform formulei algoritmului
     res = d // r
     # se printeaza flagul obtinut convertit din nou la string
